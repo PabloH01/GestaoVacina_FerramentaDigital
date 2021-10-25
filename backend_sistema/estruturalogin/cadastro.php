@@ -7,11 +7,15 @@
         <meta charset="utf8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tela de Cadastro</title>
+        <!--
         <link href="../../assets/mainEstilos/mainstyle.css" rel="stylesheet">
         <link href="../../assets/mainEstilos/mediasCadastro/1500px.css" rel="stylesheet">
         <link href="../../assets/mainEstilos/mediasCadastro/1200px.css" rel="stylesheet">
         <link href="../../assets/mainEstilos/mediasCadastro/800px.css" rel="stylesheet">
-        <link href="../../assets/mainEstilos/mediasCadastro/576px.css" rel="stylesheet">
+        <link href="../../assets/mainEstilos/mediasCadastro/576px.css" rel="stylesheet"> 
+        -->
+        <link href="../../css/main.css" rel="stylesheet">
+        <link href="../../css/css_pages/cadastro.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
         <script>
             function funcao1()

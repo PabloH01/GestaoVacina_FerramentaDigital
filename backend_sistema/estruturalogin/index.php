@@ -2,24 +2,23 @@
     include_once("funcoes.php");
 ?>
 <!DOCTYPE html>
-<html>
-    <head lang="pt-br">
-        <meta charset="utf8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+    <head>
         <title>Tela de Login</title>
-        <link href="../../assets/mainEstilos/login.css" rel="stylesheet">
-        <link href="../../assets/mainEstilos/mediasLogin/1500px.css" rel="stylesheet">
-        <link href="../../assets/mainEstilos/mediasLogin/1200px.css">
-        <link href="../../assets/mainEstilos/mediasLogin/800px.css">
-        <link href="../../assets/mainEstilos/mediasLogin/576px.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Required itens -->
+        <link href="../../css/main.css" rel="stylesheet">
+        <link href="../../css/css_pages/login.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
+        <!-- Required Verification -->
         <script>
             function funcao1()
             {
                 alert("Cadastro realizado!!")
             }
         </script>
-        <title>Página de Login</title>
     </head>
     <body>
         <div class="main">
