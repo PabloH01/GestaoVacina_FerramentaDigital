@@ -11,17 +11,9 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../../../css/main.css">
         <link rel="stylesheet" href="../../../css/css_pages/index.css">
+        <!-- Icones -->
+        <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
         <title>Página Inicial</title>
-
-        <!-- Open SQL -->
-        <?php
-        session_start();
-        if($_SESSION["permissao"] == 2){
-            echo "Bem vindo! " . $_SESSION["CPF_usuario"];
-        }else{
-            header("Location: ../index.php");
-        }
-        ?>
     </head>
     <body>
         <!-- Uso do bootstrap -->
@@ -30,7 +22,6 @@
             integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
             crossorigin="anonymous">
         </script>
-
         <script src="../../../js/bootstrap.min.js"></script>
         <!-- Barra de navegação -->
         <div id="header">
@@ -71,21 +62,75 @@
                     </div>
                 </nav>
                 <!-- ESC Barra de navegação -->
+                <!-- Open SQL -->
+                <?php
+                session_start();
+                if($_SESSION["permissao"] == 2){
+                    echo "<strong>Bem vindo - </strong><br> CPF - " . $_SESSION["CPF_usuario"] . "<br>Código Único de Saúde: ";
+                }else{
+                    header("Location: ../index.php");
+                }
+                ?>
+                <!-- 
                 <h3>O que deseja fazer na carteira de vacinação digital?</h3>
                 <a href='inclusao.php'>Incluir uma nova vacina em minha carteira</a><br>
-                <!-- Fazer depois -->
                 <a href='consulta.php'>Consultar uma vacina em minha carteira</a><br>
-                <!-- Fazer depois -->
                 <a href='geral.php'>Vizualizar minha carteira</a><br>
-                <!-- Fazer depois -->
                 <a href='exclusao.php'>Excluir uma vacina da minha carteira</a><br>
-                <!-- Fazer depois -->
                 <a href='alteracao.php'>Alterar os dados de uma vacina em minha carteira</a><br>
-                <!-- Fazer depois -->
                 <a href='notificacao.php'>Minhas notificações</a><br>
-                <!-- Fazer depois -->
                 <a href='verdadosuser.php'>Meus Dados</a><br>
-                <!-- Fazer depois -->
+                -->
+                <div class="container menu-index">
+                    <div class="container sub-menu-index1" style="width: 40%;">
+                        <img src="../../../itens/imgs/campanha.jpg" class="img-fluid" width="100%">
+                        <h5>Para mais informações acesse: https://www.noticias/campanha-de-vacinacao<h5>
+                    </div>
+                    <div class="container sub-menu-index2" style="width: 60%;">
+                        <div class="row">
+                            <div class="col">
+                                <label class="icon-input">
+                                    <i class="fas fa-syringe icon-mdy"></i>
+                                    Incluir uma vacina!
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="icon-input">
+                                <i class="fas fa-user-md icon-mdy"></i>
+                                Visualizar a carteira.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="icon-input">
+                                    <i class="fas fa-edit icon-mdy"></i>
+                                    Alterar os dados!
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="icon-input">
+                                    <i class="fas fa-notes-medical icon-mdy"></i>
+                                    Consultar meus dados!
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="icon-input">
+                                    <i class="fas fa-virus-slash icon-mdy"></i>
+                                    Deletar um registro.
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="icon-input">
+                                    <i class="fas fa-comment-medical icon-mdy"></i>
+                                    Visualizar as minhas notificações.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

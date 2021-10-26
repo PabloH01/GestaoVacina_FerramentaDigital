@@ -9,3 +9,28 @@ body{
 .container{
     background-color: white;
 }
+
+.h5, h5 {
+    font-size: 0.6rem;
+    margin: 3%;
+}
+
+.col{
+    margin: 2%;
+}
+
+.icon-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon-mdy{
+    color: var(--colorAzul4);
+    padding: 5%;
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 5px;
+    font-size: 120%;
+    margin-right: 2%; margin-top: 2%;
+}
