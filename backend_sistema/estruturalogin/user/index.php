@@ -4,7 +4,10 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../../../css/main.css">
         <title>Página Inicial</title>
@@ -31,43 +34,40 @@
         <!-- Barra de navegação -->
         <div id="header">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                            <img src="../../../itens/imgs/icovacina.ico" class="img-fluid" width="10%">
-                            Gestão de Vacinas
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                    <a class="navbar-brand" href="#">
+                        <img src="../../../itens/imgs/icovacina.ico" class="img-fluid" width="10%">
+                        Gestão de Vacinas
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Serviços
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Página Incial</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Serviços
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#"><strong>Incluir</strong> uma nova vacina</a></li>
-                                <li><a class="dropdown-item" href="#">Fazer uma <strong>consulta</strong></a></li>
-                                <li><a class="dropdown-item" href="#"><strong>Visualizar</strong> minha carteira</a></li>
-                                <li><a class="dropdown-item" href="#"><strong>Excluir</strong> uma vacina</a></li>
-                                <li><a class="dropdown-item" href="#"><strong>Alterar</strong> os dados</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Vizualizar minhas <strong>notificações</strong></a></li>
-                            </ul>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                            </li>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><strong>Incluir</strong> uma nova vacina</a></li>
+                            <li><a class="dropdown-item" href="#">Fazer uma <strong>consulta</strong></a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Visualizar</strong> minha carteira</a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Excluir</strong> uma vacina</a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Alterar</strong> os dados</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Vizualizar minhas <strong>notificações</strong></a></li>
                         </ul>
-        
-                        </div>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
                     </div>
                 </nav>
                 <!-- ESC Barra de navegação -->
