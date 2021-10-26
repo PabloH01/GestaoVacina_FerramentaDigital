@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../../../css/main.css">
+        <link rel="stylesheet" href="../../../css/css_pages/index.css">
         <title>Página Inicial</title>
 
         <!-- Open SQL -->
@@ -36,8 +37,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
                     <a class="navbar-brand" href="#">
-                        <img src="../../../itens/imgs/icovacina.ico" class="img-fluid" width="10%">
-                        Gestão de Vacinas
+                        <img src="../../../itens/imgs/icovacina.ico" class="img-fluid" width="40%">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
