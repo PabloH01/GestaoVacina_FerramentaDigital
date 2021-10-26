@@ -37,7 +37,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
                     <a class="navbar-brand" href="#">
-                        <img src="../../../itens/imgs/icovacina.ico" class="img-fluid" width="40%">
+                        <img src="../../../itens/imgs/logovacinaEscrita.ico" class="img-fluid">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
