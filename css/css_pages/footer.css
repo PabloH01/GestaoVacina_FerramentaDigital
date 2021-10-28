@@ -10,6 +10,7 @@
     margin-bottom: 35px;
     text-align: center;
     color: #777;
+    font-size: 15px;
 }
 
 #myFooter ul{
@@ -20,7 +21,7 @@
 
 #myFooter a{
     color: #282b2d;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 #myFooter li{
@@ -29,15 +30,15 @@
     line-height: 2;
 }
 
-#myFooter .footer-social{
+#myFooter .barra{
     text-align: center;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     background-color: #eee;
 }
 
 #myFooter .fa{
-    font-size: 36px;
+    font-size: 15px;
     margin-right: 15px;
     margin-left: 20px;
     background-color: white;
@@ -51,40 +52,6 @@
     text-decoration: none;
     transition:color 0.2s;
 }
-
-#myFooter .fa-facebook:hover{
-   color: #2b55ff;
-}
-
-#myFooter .fa-facebook:focus{
-    color: #2b55ff; 
-}
-
-#myFooter .fa-instagram:hover{
-    color:purple;
-}
-
-#myFooter .fa-instagram:focus{
-    color:purple;
-}
-
-#myFooter .fa-youtube:hover{
-    color:red;
-}
-
-#myFooter .fa-youtube:focus{
-    color:red;
-}
-
-#myFooter .fa-twitter:hover{
-    color: #00aced;
-
-}
-
-#myFooter .fa-twitter:focus{
-    color:#00aced;
-}
-
 
 
 /* CSS utilizado para posicionar o rodapé no final da página. */

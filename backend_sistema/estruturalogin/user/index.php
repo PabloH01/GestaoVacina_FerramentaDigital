@@ -182,7 +182,7 @@
                             </ul>
                             <p class="footer-copyright">© 2021 Copyright - Pablo Henrique, Rafaela Petelin e Thaissa Ferrari</p>
                         </div>
-                        <div class="footer-social">
+                        <div class="barra">
                             <br><br>
                         </div>
                     </footer>
