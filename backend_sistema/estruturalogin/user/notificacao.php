@@ -2,6 +2,8 @@
 <html>
     <meta charset="UTF-8">
 <title> Minhas notificações </title>
+<link rel="stylesheet" href="../../../css/main.css">
+<link rel="stylesheet" href="../../../css/css_pages/notify.css">
 <body>
 <?php
         session_start();
@@ -9,7 +11,6 @@
             header("Location: ../index.php");
         }
     ?>
-<h3>Minhas notificações</h3>
 <?php
 	include_once('../conexao.php');
 	$CPF_usuario = $_SESSION["CPF_usuario"];
@@ -23,19 +24,24 @@
 	}else if(mysqli_num_rows($query) == 0){
         echo '<h4>Você não tem nenhuma vacina pendente hoje!</h4>';
     }else{
-    echo "<h4>As seguintes vacinas devem ser tomadas hoje!</h4><br>";
-    echo "<table border='1px'>";
-    echo "<tr><th widht = '30px' align = 'center'>Código</th>
-    <th widht = '100px'>Nome da Vacina</th>
-    <th widht = '100px'>Fabricante</th>
-    <th widht = '100px'>Vacinador</th>
-    <th widht = '100px'>Registro Profissional do vacinador</th>
-    <th widht = '100px'>Dose</th>
-    <th widht = '100px'>Data de Aplicação</th>
-    <tr>";
+    echo "
+    <body>
+    <div class='container'>
+        <table class='table'>
+        <thead>
+            <tr>
+            <th scope='col'>Código</th>
+            <th scope='col'>Nome da Vacina</th>
+            <th scope='col'>Fabricante</th>
+            <th scope='col'>Vacinador</th>
+            <th scope='col'>Registro profissional do vacinador</th>
+            <th scope='col'>Quant. Dose</th>
+            <th scope='col'>Data de aplicação</th>
+            </tr>
+        </thead>  
+    ";
     
     while($dados = mysqli_fetch_array($query)){      
-    echo "</tr>";
     echo "<td align = 'center'>" . $dados['ID_vacina'] . "</td>";
     echo "<td align = 'center'>". $dados['nome_vacina'] . "</td>";
     echo "<td align = 'center'>". $dados['fabricante'] . "</td>";
@@ -43,6 +49,10 @@
     echo "<td align = 'center'>". $dados['regProfVacinador'] . "</td>";
     echo "<td align = 'center'>". $dados['dose'] . "</td>";
     echo "<td align = 'center'>". $dados['data_vac'] . "</td>";
+    echo "</tr>";
+    echo "</tbody>";
+    echo "</div>";
+    echo "<body>";
     //  // buscando a na pasta imagem
     //  if (empty($dados['imagem'])) {
     //     $imagem = 'SemImagem.png';
