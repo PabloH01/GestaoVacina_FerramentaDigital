@@ -55,3 +55,46 @@ strong{
 .container .sub-menu-index2{
     background-color: var(--colorAzul_20);
 }
+
+/* Estilização da tela de notificações */
+#tabelaVacinas .container{
+    background-color: white;
+}
+
+.container .tabelasInfo{
+    display: flex;
+}
+
+.container .tabela2{
+    background-color: var(--colorAzul5_20);
+    flex-direction: column;
+}
+
+.container .tabela3{
+    background-color: var(--colorAzul5_20);
+}
+
+#tabelaVacinas .cinza{
+    color: var(--cinza_ParaFonte);
+    font-size: 18px;
+}
+
+#tabelaVacinas .table{
+    margin-top: 2%;
+    border: 2px solid var(--cinza_ParaFonte);
+}
+
+#tabelaVacinas td{
+    font-size: 15px;
+}
+
+#tabelaLegenda .container table{
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.table3{
+    background-color: red;
+    border-radius: 15px;
+}
