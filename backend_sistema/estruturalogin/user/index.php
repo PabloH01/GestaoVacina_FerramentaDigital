@@ -46,13 +46,17 @@
                             Serviços
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#"><strong>Incluir</strong> uma nova vacina</a></li>
-                            <li><a class="dropdown-item" href="#">Fazer uma <strong>consulta</strong></a></li>
-                            <li><a class="dropdown-item" href="#"><strong>Visualizar</strong> minha carteira</a></li>
-                            <li><a class="dropdown-item" href="#"><strong>Excluir</strong> uma vacina</a></li>
-                            <li><a class="dropdown-item" href="#"><strong>Alterar</strong> os dados</a></li>
+                            <li><a class="dropdown-item" href="notificacao.php">Vizualizar minhas <strong>notificações</strong></a></li>
+                            <li><a class="dropdown-item" href="geral.php"><strong>Carteira de Vacinação</strong> completa</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Vizualizar minhas <strong>notificações</strong></a></li>
+                            <li><a class="dropdown-item" href="inclusao.php"><strong>Incluir</strong> uma nova vacina</a></li>
+                            <li><a class="dropdown-item" href="verdadosuser.php">Vizualizar meus <strong>dados</strong></a></li>
+                            <li><a class="dropdown-item" href="consulta.php"><strong>Verificar</strong> uma vacina</a></li>
+                            <li><a class="dropdown-item" href="alteracao.php"><strong>Alterar</strong> os dados</a></li>
+                            <li><a class="dropdown-item" href="exclusao.php"><strong>Deletar</strong> um registro</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Precisa de<strong> ajuda?</strong></a></li>
+                            <li><a class="dropdown-item" href="#">Encerrar<strong> seção</strong></a></li>
                         </ul>
                         </li>
                         <li class="nav-item">
@@ -84,52 +88,93 @@
                 <div class="container menu-index">
                     <div class="container sub-menu-index1" style="width: 40%;">
                         <img src="../../../itens/imgs/campanha.jpg" class="img-fluid" width="100%">
-                        <h5>Para mais informações acesse: https://www.noticias/campanha-de-vacinacao<h5>
+                        <h5 class="linkcampanha">Para mais informações acesse: <a class="linkcampanha" href="https://www.noticias/campanha-de-vacinacao">https://www.noticias/campanha-de-vacinacao</a><h5>
                     </div>
                     <div class="container sub-menu-index2" style="width: 60%;">
-                        <div class="row">
-                            <div class="col">
-                                <label class="icon-input">
-                                    <i class="fas fa-syringe icon-mdy"></i>
-                                    Incluir uma vacina!
-                                </label>
+                        <div class="itens-servicos">
+                            <div class="row">
+                                <div class="col">
+                                    <a href='inclusao.php' class="link-edit">
+                                        <label class="icon-input">
+                                            <i class="fas fa-syringe icon-mdy"></i>
+                                            Incluir<br> uma vacina!
+                                        </label>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href='consulta.php' class="link-edit">
+                                        <label class="icon-input">
+                                            <i class="fas fa-user-md icon-mdy"></i>
+                                            Consultar<br> um registro.
+                                        </label>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col">
-                                <label class="icon-input">
-                                <i class="fas fa-user-md icon-mdy"></i>
-                                Visualizar a carteira.
-                                </label>
+                            <div class="row">
+                                <div class="col">
+                                    <a href='verdadosuser.php' class="link-edit">
+                                        <label class="icon-input pad">
+                                            <i class="fas fa-notes-medical icon-mdy"></i>
+                                            Consultar<br> meus dados!
+                                        </label>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href='exclusao.php' class="link-edit">
+                                        <label class="icon-input">
+                                            <i class="fas fa-virus-slash icon-mdy"></i>
+                                            Deletar<br> um registro.
+                                        </label>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <label class="icon-input">
-                                    <i class="fas fa-edit icon-mdy"></i>
-                                    Alterar os dados!
-                                </label>
+                            <div class="row">
+                                <div class="col">
+                                    <a href='alteracao.php' class="link-edit">
+                                        <label class="icon-input">
+                                            <i class="fas fa-edit icon-mdy"></i>
+                                            Alterar<br> os dados!
+                                        </label>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href='#' class="link-edit">
+                                        <label class="icon-input">
+                                            <i class="fas fa-info icon-mdy"></i>
+                                            Sobre o projeto.
+                                        </label>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col">
-                                <label class="icon-input">
-                                    <i class="fas fa-notes-medical icon-mdy"></i>
-                                    Consultar meus dados!
-                                </label>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <label class="icon-input">
-                                    <i class="fas fa-virus-slash icon-mdy"></i>
-                                    Deletar um registro.
-                                </label>
-                            </div>
-                            <div class="col">
-                                <label class="icon-input">
-                                    <i class="fas fa-comment-medical icon-mdy"></i>
-                                    Visualizar as minhas notificações.
-                                </label>
+                            <div class="row">
+                                <div class="col">
+                                    <a href='notificacao.php' class="link-edit">
+                                        <label class="icon-input">
+                                            <i class="fas fa-comment-medical icon-mdy"></i>
+                                            Visualizar<br> as minhas notificações.
+                                        </label>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href='geral.php' class="link-edit">
+                                        <label class="icon-input">
+                                            <i class="fas fa-envelope-open-text icon-mdy"></i>
+                                            Carteira de vacinação<br> completa.
+                                        </label>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="branco">
+                    <p>_<p>
+                    <p>-<p>
+                    <p>-<p>
+                    <p>-<p>
+                    <p>-<p>
+                    <p>-<p>
                 </div>
             </div>
         </div>
