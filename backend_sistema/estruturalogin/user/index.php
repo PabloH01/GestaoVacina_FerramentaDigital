@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!doctype html>
 <html lang="pt-br">
     <head>
@@ -10,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../../../css/main.css">
+        <link rel="stylesheet" href="../../../css/css_pages/footer.css">
         <link rel="stylesheet" href="../../../css/css_pages/index.css">
         <!-- Icones -->
         <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
@@ -68,7 +72,6 @@
                 <!-- ESC Barra de navegação -->
                 <!-- Open SQL -->
                 <?php
-                session_start();
                 if($_SESSION["permissao"] == 2){
                     echo "<strong>Bem vindo - </strong><br> CPF - " . $_SESSION["CPF_usuario"] . "<br>Código Único de Saúde: ";
                 }else{
@@ -86,12 +89,30 @@
                 <a href='verdadosuser.php'>Meus Dados</a><br>
                 -->
                 <div class="container menu-index">
-                    <div class="container sub-menu-index1" style="width: 40%;">
+                    <div class="container sub-menu-index1" style="width: 50%;">
                         <img src="../../../itens/imgs/campanha.jpg" class="img-fluid" width="100%">
                         <h5 class="linkcampanha">Para mais informações acesse: <a class="linkcampanha" href="https://www.noticias/campanha-de-vacinacao">https://www.noticias/campanha-de-vacinacao</a><h5>
                     </div>
-                    <div class="container sub-menu-index2" style="width: 60%;">
+                    <div class="container sub-menu-index2" style="width: 50%;">
                         <div class="itens-servicos">
+                        <div class="row">
+                                <div class="col">
+                                    <a href='notificacao.php' class="link-edit">
+                                        <label class="icon-input">
+                                            <i class="fas fa-comment-medical icon-mdy"></i>
+                                            Visualizar<br> as minhas notificações.
+                                        </label>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href='geral.php' class="link-edit">
+                                        <label class="icon-input">
+                                            <i class="fas fa-envelope-open-text icon-mdy"></i>
+                                            Carteira de vacinação<br> completa.
+                                        </label>
+                                    </a>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col">
                                     <a href='inclusao.php' class="link-edit">
@@ -147,35 +168,25 @@
                                 </div>
                             </div>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <a href='notificacao.php' class="link-edit">
-                                        <label class="icon-input">
-                                            <i class="fas fa-comment-medical icon-mdy"></i>
-                                            Visualizar<br> as minhas notificações.
-                                        </label>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <a href='geral.php' class="link-edit">
-                                        <label class="icon-input">
-                                            <i class="fas fa-envelope-open-text icon-mdy"></i>
-                                            Carteira de vacinação<br> completa.
-                                        </label>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="branco">
-                    <p>_<p>
-                    <p>-<p>
-                    <p>-<p>
-                    <p>-<p>
-                    <p>-<p>
-                    <p>-<p>
-                </div>
+                    <div class="content">
+                    </div>
+                    <footer id="myFooter">
+                        <div class="container">
+                            <ul>
+                                <div class="linha"></div>
+                                <li><a href="#">Informações</a></li>
+                                <li><a href="#">Suporte</a></li>
+                                <li><a href="#">Redes Sociais</a></li>
+                            </ul>
+                            <p class="footer-copyright">© 2021 Copyright - Pablo Henrique, Rafaela Petelin e Thaissa Ferrari</p>
+                        </div>
+                        <div class="footer-social">
+                            <br><br>
+                        </div>
+                    </footer>
+                    </div>
             </div>
         </div>
     </body>
