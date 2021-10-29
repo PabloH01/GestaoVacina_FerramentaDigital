@@ -75,7 +75,7 @@
     <div id='tabelaLegenda'>
         <div class='container tabelasInfo'>
             <div class='container tabela2' style='width: 40%;'>
-            <table class='table'>
+            <table class='table table2'>
             <thead>
               <tr>
                 <th scope='col'>Legenda</th>
@@ -98,14 +98,9 @@
             </tbody>
             </table>
             </div>
-            <div class='container tabela3' style='width: 60%;'>
-                <table class='table table3'>
-                <thead>
-                    <tr>
-                    <th scope='col' class='aviso'>Você possui X vacina(s) atrasadas.<br> Procure a unidade de saúde mais próxima!</th>
-                    </tr>
-                </thead>
-                </table>
+            <div class='container info' style='width: 35%;'>
+                <p class='infoP'>Você possui X vacina(s) atrasadas.<br>
+                Procure a unidade de saúde mais próxima!<p>
             </div>
         </div>
     </div>

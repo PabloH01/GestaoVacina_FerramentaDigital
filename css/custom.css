@@ -71,7 +71,8 @@ strong{
 }
 
 .container .tabela3{
-    background-color: var(--colorAzul5_20);
+    padding: 4%;
+    padding-right: 12%;padding-left: 12%;
 }
 
 #tabelaVacinas .cinza{
@@ -94,7 +95,27 @@ strong{
     justify-items: center;
 }
 
+#tabela .container .tabela3{
+    border-radius: 150%;
+}
+
 .table3{
     background-color: red;
-    border-radius: 15px;
+}
+
+.table2, .table3{
+    background-color: var(--colorAzul5_20);
+}
+
+.info{
+    border: solid 1px;
+    background-color: var(--colorAzul5_20);
+    padding: 4%;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.infoP{
+    padding: 0;
+    margin: 0;
 }
