@@ -29,7 +29,7 @@
         echo "
         <body>
         <div id='tabelaVacinas'>
-            
+            <div class='container'>
                 <h3><strong>Bem vindo!</strong></h3>
                 <h3 class='cinza'>Minhas notificações:</h3><br>
                 <table class='table'>
