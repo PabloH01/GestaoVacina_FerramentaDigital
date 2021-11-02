@@ -29,7 +29,8 @@
         echo "
         <body>
         <div id='tabelaVacinas'>
-            <div class='container'>
+            <div class='container not'>
+                <!-- Nav Bar -->
                 <h3><strong>Bem vindo!</strong></h3>
                 <h3 class='cinza'>Minhas notificações:</h3><br>
                 <table class='table'>
@@ -74,42 +75,49 @@
     /*Construção da tabela de LEGENDA */
     echo "
     <div id='tabelaLegenda'>
-        <div class='container tabelasInfo'>
-            <div class='container tabela2' style='width: 40%;'>
-            <table class='table table2'>
-            <thead>
-              <tr>
-                <th scope='col'>Legenda</th>
-                <th scope='col'>Representação</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Vacina em até 10 dias</td>
-                <td><div class='bola verde'></div></td>
-              </tr>
-              <tr>
-                <td>Vacina(s) - Hoje!</td>
-                <td><div class='bola azul'></div></td>
-              </tr>
-              <tr>
-                <td>Vacina(s) atrasadas!</td>
-                <td><div class='bola vermelha'></div></td>
-              </tr>
-            </tbody>
-            </table>
-            </div>
-            <div class='container info' style='width: 35%;'>
-                <p class='infoP'>Você possui X vacina(s) atrasadas.<br>
-                Procure a unidade de saúde mais próxima!<p>
-            </div>
+      <div class='container tabelasInfo'>
+        <div class='container tabela2' style='width: 40%;'>
+          <table class='table table2'>
+          <thead>
+            <tr>
+              <th scope='col'>Legenda</th>
+              <th scope='col'>Representação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vacina em até 10 dias</td>
+              <td><div class='bola verde'></div></td>
+            </tr>
+            <tr>
+              <td>Vacina(s) - Hoje!</td>
+              <td><div class='bola azul'></div></td>
+            </tr>
+            <tr>
+              <td>Vacina(s) atrasadas!</td>
+              <td><div class='bola vermelha'></div></td>
+            </tr>
+          </tbody>
+          </table>
         </div>
-    </div>
+        <div class='container info' style='width: 35%; background-color: var(--colorAzul5_20);'>
+          <p class='infoP'>Você possui X vacina(s) atrasadas.<br>
+          Procure a unidade de saúde mais próxima!<p>
+        </div>
+      </div>
     ";
     }
         mysqli_close($conexao);
     ?>
     <br>
+      <div class='container botoes'>
+        <div class="botaoVoltar">
+          <button class='btn btn-style1' onclick='window.location.href="../user/index.php"'><strong>Voltar</strong></button>
+        </div> 
+        <div class="botaoAlterar">
+          <button class='btn btn-style1' onclick='window.location.href="alteracao.php"'>Algo errado? Você pode alterar seus dados <strong>aqui!</strong></button>
+        </div>
+      </div>
     <!-- <input type='button' onclick="window.location='index.php';" value="Voltar"> -->
     </body>
 </html>

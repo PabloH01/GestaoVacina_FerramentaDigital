@@ -30,3 +30,14 @@ body{
     /*estilizar aviso variavél*/
     padding: 20%;
 }
+
+.botoes{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.botaoVoltar{
+    flex-direction: column;
+}

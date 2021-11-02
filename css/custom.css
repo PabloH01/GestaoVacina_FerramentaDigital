@@ -56,7 +56,13 @@ strong{
     background-color: var(--colorAzul_20);
 }
 
+
+
 /* Estilização da tela de notificações */
+
+.not{
+    padding-left: 5%; padding-right: 5%;
+}
 #tabelaVacinas .container{
     background-color: white;
 }
@@ -86,7 +92,7 @@ strong{
 }
 
 #tabelaVacinas td{
-    font-size: 15px;
+    font-size: 13px;
 }
 
 #tabelaLegenda .container table{
@@ -99,12 +105,12 @@ strong{
     border-radius: 150%;
 }
 
-.table3{
-    background-color: red;
+.table2{
+    background-color: var(--colorAzul5_20);
 }
 
-.table2, .table3{
-    background-color: var(--colorAzul5_20);
+.tabela2, .info{
+    margin-top: 5%;
 }
 
 .info{
@@ -112,10 +118,9 @@ strong{
     background-color: var(--colorAzul5_20);
     padding: 4%;
     text-align: center;
-    border-radius: 5%;
+    border-radius: 10%;
 }
 
 .infoP{
-    padding: 0;
-    margin: 0;
+    padding-top: 5%;
 }
