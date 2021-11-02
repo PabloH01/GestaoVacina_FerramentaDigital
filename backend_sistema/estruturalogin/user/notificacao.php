@@ -22,13 +22,14 @@
             echo '<input type="button" onclick="window.location='."'index.php'".';" value="Voltar"><br><br>';
             die('<b>Query Inválida:</b>' . @mysqli_error($conexao));  
         }else if(mysqli_num_rows($query) == 0){
-            echo '<h4>Você não tem nenhuma vacina pendente hoje!</h4>';
+            echo "<script>alert('Você não possui nenhuma notificação de vacinas no momento!')</script>";
+            echo '<script>window.location.href="../user/index.php";</script>';
         }else{
         /*Construção da tabela de VACINAS */
         echo "
         <body>
         <div id='tabelaVacinas'>
-            <div class='container'>
+            
                 <h3><strong>Bem vindo!</strong></h3>
                 <h3 class='cinza'>Minhas notificações:</h3><br>
                 <table class='table'>
