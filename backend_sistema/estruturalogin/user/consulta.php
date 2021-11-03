@@ -20,7 +20,7 @@
                 <h3 class="title"> Consultar Vacina </h3>
                 <form name="nome" action="consulta.php" method="post" class="form">
                 Insira o código da vacina que você deseja consultar:
-                    <label class="icon-input">
+                    <label class="icon-input cons">
                             <i class="fas fa-address-book icon-mdy"></i>
                             <input type="number" name="ID_vacina" placeholder="Exemplo: 2">
                     </label>   
@@ -67,21 +67,21 @@
                 <form name="nome" class="form">
                     <div class="inputs">
                     <div>Código da vacina:</div>
-                        <label class="icon-input">
+                        <label class="icon-input cons">
                                 <i class="fas fa-address-book icon-mdy"></i>
                                 <input type="number"  value="<?php echo $dados['ID_vacina']; ?>" readonly >
                         </label>
                     </div>
                     <div class="inputs">
                     <div>Nome da Vacina:</div>
-                        <label class="icon-input">
+                        <label class="icon-input cons">
                             <i class="fas fa-file-signature icon-mdy"></i>
                             <input type="text"  value="<?php echo $dados['nome_vacina']; ?>" readonly >
                         </label>
                     </div>
                     <div class="inputs">
                     <div> Fabricante:</div>
-                        <label class="icon-input">
+                        <label class="icon-input cons">
                             <i class="fas fa-file-signature icon-mdy"></i>
                             <input type="text" value="<?php echo $dados['fabricante']; ?>" readonly >
                             <!-- resize: none -->
@@ -89,28 +89,28 @@
                     </div>
                     <div class="inputs">
                     <div>Vacinador:</div>
-                        <label class="icon-input">
+                        <label class="icon-input cons">
                             <i class="fas fa-file-signature icon-mdy"></i>
                             <input type="text"  value="<?php echo $dados['vacinador']; ?>" readonly >
                         </label>
                     </div>
                     <div class="inputs">
                          <div>Reg. profissional vacinador:</div>
-                         <label class="icon-input">
+                         <label class="icon-input cons">
                             <i class="fas fa-address-book icon-mdy"></i>
                              <input type="text"  value="<?php echo $dados['regProfVacinador']; ?>" readonly >
                         </label>
                     </div>
                     <div class="inputs">
                         <div>Dose</div>
-                        <label class="icon-input">
+                        <label class="icon-input cons">
                             <i class="fas fa-file-medical icon-mdy"></i>
                             <input type="text" value="<?php echo $dados['dose']; ?>" readonly >
                         </label>
                     </div>
                     <div class="inputs">
                         <div> Data de aplicação:</div>
-                        <label class="icon-input">
+                        <label class="icon-input cons">
                             <i class="fas fa-calendar-day icon-mdy"></i>
                             <input type="text" value="<?php echo $dados['data_vac']; ?>" readonly >
                         </label>

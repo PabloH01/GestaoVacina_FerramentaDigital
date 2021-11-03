@@ -155,10 +155,10 @@ strong{
     height: 45px;
     border: none;
     width: 100%;
-    background-color: var(--colorAzul5_20);
+    background-color: transparent;
 }
 
-.icon-input{
+.cons{
     width: 100%;
     display: flex;
     align-items: center;
