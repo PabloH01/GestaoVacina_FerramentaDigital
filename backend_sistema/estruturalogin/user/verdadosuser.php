@@ -1,20 +1,21 @@
+<?php
+        session_start();
+        if($_SESSION["permissao"] != 2){
+            header("Location: ../index.php");
+        }
+        include_once('../conexao.php');
+        include_once('../funcoes.php');
+?>
 <!DOCTYPE html>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <head>
         <title> Meus Dados</title>
-        <link href="../../../assets/mainEstilos/styleDadosUser.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/main.css">
+        <link rel="stylesheet" href="../../../css/css_pages/consulta.css">
         <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
     </head>
 <body>
 <?php
-  
-	session_start();
-	if($_SESSION["permissao"] != 2){
-		header("Location: ../index.php");
-	}
-
-	include_once('../conexao.php');
-    include_once('../funcoes.php');
 	// recuperando 
     $CPF_usuario = $_SESSION["CPF_usuario"];
 
@@ -38,31 +39,38 @@
 	} 
 	mysqli_close($conexao);
 ?>
-	<div class="content">
-            <div class="info">
+	<div class="container">
+            <div class="info_consulta">
                 <h3 class="title">Meus Dados</h3>
                 <form action="verdadosuser.php" method="POST">
-				    CPF:
-					<label class="icon-input">
-							<i class="fas fa-address-book icon-mdy"></i>
-							<input type="text" value="<?php echo $dados['CPF_usuario']; ?>" disabled="disabled" >
-					</label>
-                    Nome Completo:
-                    <label class="icon-input">
-                        <i class="fas fa-file-signature icon-mdy"></i>
-                        <input type="text" value="<?php echo $dados['nome_completo']; ?>" disabled >
-                    </label>
-                    Código do SUS:
-                    <label class="icon-input">
-                        <i class="fas fa-file-signature icon-mdy"></i>
-                        <input type="text" value="<?php echo $dados['cod_SUS']; ?>" disabled >
-                    </label>
-                    E-mail:
-                    <label class="icon-input">
-                        <i class="fas fa-file-signature icon-mdy"></i>
-                        <input type="email"value="<?php echo $dados['email']; ?>" disabled >
-                    </label>
-                    <br>
+                    <div class="inputs">
+                        <div>CPF:</div> 
+                        <label class="icon-input">
+                                <i class="fas fa-address-book icon-mdy"></i>
+                                <input type="text" value="<?php echo $dados['CPF_usuario']; ?>" disabled="disabled" >
+                        </label>
+                    </div>
+                    <div class="inputs">
+                        <div>Nome Completo:</div> 
+                        <label class="icon-input">
+                            <i class="fas fa-file-signature icon-mdy"></i>
+                            <input type="text" value="<?php echo $dados['nome_completo']; ?>" disabled >
+                        </label>
+                    </div>
+                    <div class="inputs">
+                        <div>Código do SUS:</div>
+                        <label class="icon-input">
+                            <i class="fas fa-file-signature icon-mdy"></i>
+                            <input type="text" value="<?php echo $dados['cod_SUS']; ?>" disabled >
+                        </label>
+                    </div>
+                    <div class="inputs">
+                        <div>E-mail:</div>
+                        <label class="icon-input">
+                            <i class="fas fa-file-signature icon-mdy"></i>
+                            <input type="email"value="<?php echo $dados['email']; ?>" disabled >
+                        </label>
+                    </div>
                     <div class="botoes">
                         <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
 						<input class="btn btn-style2" type="submit" value="SAIR" name="SAIR">
