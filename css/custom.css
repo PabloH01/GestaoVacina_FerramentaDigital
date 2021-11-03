@@ -124,3 +124,81 @@ strong{
 .infoP{
     padding-top: 5%;
 }
+/* Estilização das telas de consulta (consulta.php e consultar.php)*/
+.container .info_consulta{
+    background-color: white;
+    height: fit-content;
+    border: 1px solid var(--cinza_ParaFonte);
+    padding-top: 4%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left:5%;
+    margin-top: 1%;
+    text-align: center;
+}
+.container .info_consulta .title{
+    font-size: 26px;
+    padding-bottom: 3%;
+}
+.container .info_consulta .form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.info_consulta .form .inputs{
+    padding: 2%;
+}
+
+.form input{
+    height: 45px;
+    border: none;
+    width: 100%;
+    background-color: var(--colorAzul5_20);
+}
+
+.icon-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 2%; margin-bottom: 2%;
+    background-color: var(--colorAzul5_20);
+}
+
+.icon-mdy{
+    color: rgb(169, 214, 229);
+    padding: 0px 8px;
+}
+
+.botoes{
+    text-align: center;
+    align-items: center;
+}
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    /*top and bottom*/
+    padding: 8px 40px;
+    cursor: pointer;
+    transition: 220ms;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border-width: 0px;
+    border: none;
+}
+
+.btn-style2{
+    width: 190px;
+    background-color: rgb(42, 111, 151);
+    border: 1px solid rgb(42, 111, 151);
+    margin-top: 20px;
+}
+
+.btn-style2:hover{
+    background-color: #fff;
+    color: rgb(42, 111, 151);
+}
