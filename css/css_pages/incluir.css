@@ -1,0 +1,13 @@
+/*Estilo da Incluir.CSS*/
+
+.content{
+    background-color: white;
+    height: fit-content;
+    border: 1px solid var(--cinza_ParaFonte);
+    padding-top: 4%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left:8%;
+    margin-top: 1%;
+    text-align: center;
+}

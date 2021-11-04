@@ -3,7 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <head>
         <title> Incluir Vacinas </title>
-        <link href="../../../assets/mainEstilos/styleIncluir.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/main.css">
+        <link href="../../../assets/" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
     </head>
     <body>
