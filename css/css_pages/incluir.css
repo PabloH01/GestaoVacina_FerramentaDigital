@@ -13,10 +13,7 @@ body{
 	padding-top: 3%;
 }
 
-.botoes{
-    text-align: center;
-    align-items: center;
-}
+
 .btn{
     border-radius: 15px;
     text-transform: uppercase;
@@ -31,6 +28,10 @@ body{
     align-self: center;
     border-width: 0px;
     border: none;
+}
+.botoes{
+    text-align: center;
+    align-items: center;
 }
 .btn-style2{
     width: 190px;
