@@ -14,7 +14,7 @@
             header("Location: ../index.php");
         }
     ?>
-        <div class="content">
+        <div class="container">
             <div class="info">
                 <h3 class="title">Alterar Dados de Vacina</h3>
                 <form name="nome" action="veralteracao.php" method="post" class="form">

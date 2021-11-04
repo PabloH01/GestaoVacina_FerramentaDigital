@@ -11,7 +11,7 @@
             header("Location: ../index.php");
         }
     ?>
-    <div class="content">
+    <div class="container">
         <div class="info">
             <h3> Exclusão de Vacinas</h3>
             <form name="nome" action="verexclusao.php" method="post" class="form">

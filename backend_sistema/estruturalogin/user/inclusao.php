@@ -22,33 +22,33 @@
                     <label class="icon-input">
                         <i class="fas fa-file-signature icon-mdy"></i>
                         <input type="text" name="nome_vacina" placeholder="...">
-                    </label>
+                    </label><br>
                     Fabricante:
                     <label class="icon-input">
                         <i class="fas fa-file-signature icon-mdy"></i>
                         <input type="text" name="fabricante" placeholder="...">
                         <!-- resize: none -->
-                    </label>
+                    </label><br>
                     Vacinador:
                     <label class="icon-input">
                         <i class="fas fa-file-signature icon-mdy"></i>
                         <input type="text" name="vacinador" placeholder="...">
-                    </label>
+                    </label><br>
                     Registro profissional do vacinador:
                     <label class="icon-input">
                         <i class="fas fa-address-book icon-mdy"></i>
                         <input type="text" name="regProfVacinador" placeholder="...">
-                    </label>
+                    </label><br>
                     Dose:
                     <label class="icon-input">
                         <i class="fas fa-file-medical icon-mdy"></i>
                         <input type="text" name="dose" placeholder="...">
-                    </label>
+                    </label><br>
                     Data de aplicação:
                     <label class="icon-input">
                         <i class="fas fa-calendar-day icon-mdy"></i>
                         <input type="date" name="data_vac" placeholder="...">
-                    </label>
+                    </label><br>
                     <!-- <b>Dose:<select name="dose" id="cars" maxlength='80' style="width:550px">
                             <option value="primeira">1ª dose</option>
                             <option value="segunda">2ª dose</option>

@@ -6,17 +6,12 @@ body{
     background-size: cover;
 }
 
-.content{
+.container{
+    height: 150vh;
     background-color: white;
-    height: fit-content;
-    border: 1px solid var(--cinza_ParaFonte);
-    padding-top: 1%;
-    padding-bottom: 2%;
-    padding-right: 4%;
-    padding-left: 8%;
-    margin-top: 1%;
-    text-align: center;
+	padding-top: 3%;
 }
+
 
 .botoes{
     text-align: center;
