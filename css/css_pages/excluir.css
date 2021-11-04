@@ -18,7 +18,10 @@ body{
     text-align: center;
 }
 
-
+.botoes{
+    text-align: center;
+    align-items: center;
+}
 
 .btn{
     border-radius: 15px;
@@ -35,10 +38,7 @@ body{
     border-width: 0px;
     border: none;
 }
-.botoes{
-    text-align: center;
-    align-items: center;
-}
+
 .btn-style2{
     width: 190px;
     background-color: rgb(42, 111, 151);
