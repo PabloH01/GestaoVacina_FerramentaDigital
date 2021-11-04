@@ -7,16 +7,17 @@ body{
     background-size: cover;
 }
 
+.botoes{
+    text-align: center;
+    align-items: center;
+}
+
 .container{
     height: 150vh;
     background-color: white;
 	padding-top: 3%;
 }
 
-.botoes{
-    text-align: center;
-    align-items: center;
-}
 
 .btn{
     border-radius: 15px;
