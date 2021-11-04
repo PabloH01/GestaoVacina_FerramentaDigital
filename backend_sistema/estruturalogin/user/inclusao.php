@@ -4,7 +4,7 @@
     <head>
         <title> Incluir Vacinas </title>
         <link rel="stylesheet" href="../../../css/main.css">
-        <link href="../../../assets/" rel="stylesheet">
+        <link href="../../../css/css_pages/incluir.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -14,7 +14,7 @@
             header("Location: ../index.php");
         }
     ?>
-        <div class="content">
+        <div class="container">
             <div class="info">
                 <h3 class="title">Informe os dados da vacina que deseja incluir</h3>
                 <form name="nome" action="incluir.php" method="post" class="form">

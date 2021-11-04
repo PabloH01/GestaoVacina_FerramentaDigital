@@ -1,7 +1,8 @@
 <html>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title> Excluir Vacinas </title>
-    <link href="../../../assets/mainEstilos/styleExclusao.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link href="../../../css/css_pages/excluir.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
     <body>
     <?php
