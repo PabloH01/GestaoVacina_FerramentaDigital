@@ -4,7 +4,7 @@
     <head>
         <title> Alterar Dados de Vacina </title>
         <link rel="stylesheet" href="../../../css/main.css">
-        <link href="../../../css/css_pages/alterar.css" rel="stylesheet">
+        <link href="../../../css/css_pages/consulta.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d1fdd19268.js" crossorigin="anonymous"></script>
     </head>
     <body>
