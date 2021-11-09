@@ -17,3 +17,9 @@
         margin-right: 15px;
     }
 }
+
+@media screen and (max-width: 403px) {
+    *{
+    color: red;
+    }
+}
