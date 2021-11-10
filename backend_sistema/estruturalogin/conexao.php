@@ -7,7 +7,7 @@ $pass = "";
 $banco = "carteiravac";
 */
 
-$host = "172.16.20.100";
+$host = "201.62.65.6";
 $user = "pablo";
 $pass = "pablo19116";
 $banco = "etim_19116";
