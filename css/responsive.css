@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 403px) {
-    *{
-    color: red;
+    .main{
+        display: block;
     }
 }
