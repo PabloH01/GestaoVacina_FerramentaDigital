@@ -18,7 +18,7 @@
     }
 }
 
-@media screen and (max-width: 403px) {
+@media (max-width: 403px) {
     .main{
         flex-direction: column;
     }
