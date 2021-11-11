@@ -211,6 +211,8 @@ a:visited{
     }
     .primeiro-conteudo{
         width: 90%;
+        display: block;
+        flex-direction: column;
     }
 
     .content{
