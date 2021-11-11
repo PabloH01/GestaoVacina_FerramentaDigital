@@ -203,6 +203,8 @@ a:visited{
     padding: 0px 5px;
 }
 
+/* 392 x 843 - Mobile */
+
 @media (max-width: 403px) {
     .main{
         flex-direction: column;
@@ -215,12 +217,5 @@ a:visited{
         position: relative;
         height: 70%;
     }
-    .content::before {
-        position: relative;
-        left: 0%;
-        height: 40%;
-        width: 100%;
-        bottom: 65%;
-        top: 60%;
-    }
+    
 }
