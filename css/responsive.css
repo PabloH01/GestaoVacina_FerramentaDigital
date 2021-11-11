@@ -25,9 +25,17 @@
     .primeiro-conteudo{
         width: 90%;
     }
+
+    .content{
+        position: relative;
+        height: 70%;
+    }
     .content::before {
-        position: absolute;
-        height: 30%;
+        position: relative;
+        left: 0%;
+        height: 40%;
+        width: 100%;
         bottom: 65%;
+        top: 60%;
     }
 }
