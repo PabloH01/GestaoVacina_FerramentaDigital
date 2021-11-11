@@ -216,6 +216,12 @@ a:visited{
     .content{
         position: relative;
         height: 70%;
+        display: block;
+        flex-direction: column;
     }
-    
+    .content::before {
+        position: relative;
+        display: block;
+        flex-direction: column;
+    }
 }
