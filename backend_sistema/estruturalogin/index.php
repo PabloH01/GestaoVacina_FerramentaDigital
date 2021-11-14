@@ -23,7 +23,7 @@
     <body>
         <div class="main">
             <div class="content primeiro-conteudo">
-                <div class="segunda-coluna">
+                <div class="content segunda-coluna">
                     <h2 class="title title-colorBlue">Fazer Login</h2>
                     <br>
                     <p class="descripcion desc-style2">Informe os dados abaixo para realizar seu login</p>
@@ -62,7 +62,7 @@
                         <button class="btn btn-style2" type="submit" name="acessar" value="ACESSAR">Logar</button>
                     </form>
                 </div>
-                <div class="primeira-coluna">
+                <div class="content primeira-coluna">
                     <h2 class="title title-colorWhite">Olá!</h2>
                     <p class="description desc-style1">Você não possui uma conta?</p>
                     <p class="description desc-style1">Faça seu cadastro agora mesmo!</p>
