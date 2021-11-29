@@ -92,6 +92,7 @@
                         <th scope='col'>Vacinador</th>
                         <th scope='col'>Registro P.</th>
                         <th scope='col'>Q. Dose</th>
+                        <th scope='col'>Data</th>
                         <th scope='col'>Informações</th>
                         </tr>
                     </thead>  
