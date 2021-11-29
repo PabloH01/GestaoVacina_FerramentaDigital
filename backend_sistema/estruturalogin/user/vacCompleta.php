@@ -5,13 +5,53 @@
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/css_pages/vacCompleta.css">
     <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="../../../itens/imgs/logovacinaEscrita.ico" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Serviços
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="notificacao.php">Vizualizar minhas <strong>notificações</strong></a></li>
+                    <li><a class="dropdown-item" href="geral.php"><strong>Carteira de Vacinação</strong> completa</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="inclusao.php"><strong>Incluir</strong> uma nova vacina</a></li>
+                    <li><a class="dropdown-item" href="verdadosuser.php">Vizualizar meus <strong>dados</strong></a></li>
+                    <li><a class="dropdown-item" href="consulta.php"><strong>Verificar</strong> uma vacina</a></li>
+                    <li><a class="dropdown-item" href="alteracao.php"><strong>Alterar</strong> os dados</a></li>
+                    <li><a class="dropdown-item" href="exclusao.php"><strong>Deletar</strong> um registro</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Precisa de<strong> ajuda?</strong></a></li>
+                    <li><a class="dropdown-item" href="#">Encerrar<strong> seção</strong></a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
     <?php
             session_start();
             if($_SESSION["permissao"] != 2){
                 header("Location: ../index.php");
             }
         ?>
-    <h3>Carteira de Vacinação Digital</h3>
     <form action="vacsearch.php" method="POST">
     <input id="search" name="nome_vacina" type="text" placeholder="Pesquise pelo nome da vacina"><input id="submit" type="submit" value="Search">
     </form>
