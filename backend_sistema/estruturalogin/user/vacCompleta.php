@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <title> Carteira de Vacinação </title>
     <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/css_pages/index.css">
     <link rel="stylesheet" href="../../../css/css_pages/vacCompleta.css">
     <body>
     <div class="container">
