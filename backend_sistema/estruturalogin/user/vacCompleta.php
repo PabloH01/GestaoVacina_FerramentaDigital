@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <meta charset="UTF-8">
-    <title> Carteira de Vacinação </title>
+    <title>Vacinação Completa</title>
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/css_pages/index.css">
     <link rel="stylesheet" href="../../../css/css_pages/footer.css">
@@ -59,10 +59,7 @@
             if($_SESSION["permissao"] != 2){
                 header("Location: ../index.php");
             }
-        ?>
-    <form action="vacsearch.php" method="POST">
-    <input id="search" name="nome_vacina" type="text" placeholder="Pesquise pelo nome da vacina"><input id="submit" type="submit" value="Search">
-    </form>
+    ?>
     <!-- <b>* Clique na imagem para ver detalhes</b><br><br> -->
     <?php
         include_once('../conexao.php');
@@ -80,8 +77,11 @@
         <div id='tabelaVacinas'>
             <div class='container not'>
                 <!-- Nav Bar -->
-                <h3><strong>Bem vindo!</strong></h3>
-                <h3 class='cinza'>Minhas notificações:</h3><br>
+                <h3><strong>Carteira de completa de Vacinação</strong></h3>
+                <form action='vacsearch.php' method='POST'>
+                <input id='search' name='nome_vacina' type='text' placeholder='Pesquise pelo nome da vacina'><input id='submit' type='submit' value='Search'>
+                </form>
+                <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
                 <table class='table'>
                 <thead>
                     <tr>
