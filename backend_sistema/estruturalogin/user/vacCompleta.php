@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/custom.css">
     <link rel="stylesheet" href="../../../css/css_pages/index.css">
+    <link rel="stylesheet" href="../../../css/css_pages/notify.css">
     <link rel="stylesheet" href="../../../css/css_pages/vacCompleta.css">
     <body>
     <script
