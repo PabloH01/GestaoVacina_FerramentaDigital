@@ -125,7 +125,7 @@
         mysqli_close($conexao);
         ?>
         <br>
-        <div class='container botoes'>
+        <div class='botoes'>
             <div class="botaoVoltar">
                 <button class='btn btn-style1' onclick='window.location.href="../user/index.php"'><strong>Voltar</strong></button>
             </div> 
