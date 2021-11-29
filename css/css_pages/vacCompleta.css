@@ -1,5 +1,6 @@
 .azul{
     background-color: var(--colorAzul5_20);
+    border: 1px solid var(--cinza_ParaFonte);
 }
 
 .h3{
