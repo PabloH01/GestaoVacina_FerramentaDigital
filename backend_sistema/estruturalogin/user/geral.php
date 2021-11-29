@@ -26,16 +26,26 @@
 		echo '<input type="button" onclick="window.location='."'index.php'".';" value="Voltar"><br><br>';
 		die('<b>Query Inválida:</b>' . @mysqli_error($conexao));  
 	}
-
-    echo "<table border='1px'>";
-    echo "<tr><th widht = '30px' align = 'center'>Código</th>
-    <th widht = '100px'>Nome da Vacina</th>
-    <th widht = '100px'>Fabricante</th>
-    <th widht = '100px'>Vacinador</th>
-    <th widht = '100px'>Registro Profissional do vacinador</th>
-    <th widht = '100px'>Dose</th>
-    <th widht = '100px'>Data de Aplicação</th>
-    <tr>";
+    echo "
+    <body>
+    <div id='tabelaVacinas'>
+        <div class='container not'>
+            <!-- Nav Bar -->
+            <h3><strong>Bem vindo!</strong></h3>
+            <h3 class='cinza'>Minhas notificações:</h3><br>
+            <table class='table'>
+            <thead>
+                <tr>
+                <th scope='col'>Código</th>
+                <th scope='col'>Nome da Vacina</th>
+                <th scope='col'>Fabricante</th>
+                <th scope='col'>Vacinador</th>
+                <th scope='col'>Registro profissional do vacinador</th>
+                <th scope='col'>Quant. Dose</th>
+                <th scope='col'>Data de aplicação</th>
+                </tr>
+            </thead>  
+    ";
     
     while($dados = mysqli_fetch_array($query)){      
     echo "</tr>";
@@ -46,6 +56,11 @@
     echo "<td align = 'center'>". $dados['regProfVacinador'] . "</td>";
     echo "<td align = 'center'>". $dados['dose'] . "</td>";
     echo "<td align = 'center'>". $dados['data_vac'] . "</td>";
+    echo "</tr>";
+    echo "</tbody>";
+    echo "</div>";
+    echo "</div>";
+    echo "<body>";
     //  // buscando a na pasta imagem
     //  if (empty($dados['imagem'])) {
     //     $imagem = 'SemImagem.png';
@@ -55,10 +70,10 @@
     // echo "<td align='center'><a href='imagens/$imagem'><img src='imagens/$imagem' width='50px' heigth='50px'></a>";
     echo "</tr>";
 }
-echo "</table>";
-	mysqli_close($conexao);
-?>
-<br>
-<input type='button' onclick="window.location='index.php';" value="Voltar">
-</body>
+    echo "</table>";
+    mysqli_close($conexao);
+    ?>
+    <br>
+    <input type='button' onclick="window.location='index.php';" value="Voltar">
+    </body>
 </html>
