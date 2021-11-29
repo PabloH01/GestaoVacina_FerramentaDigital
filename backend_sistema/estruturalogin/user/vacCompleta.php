@@ -77,7 +77,7 @@
         <div id='tabelaVacinas'>
             <div class='container not'>
                 <!-- Nav Bar -->
-                <h3>Carteira de completa de Vacinação</h3>
+                <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
                 <div class='azul'>
                     <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
                     <h3 class='cinza'>Atualizada em: XX/XX/XXXX - Vencimento: XX/XXXX</h3>
@@ -123,15 +123,13 @@
         mysqli_close($conexao);
         ?>
         <br>
-        <div class='container botoes'>
-            <div class="botaoVoltar">
-                <button class='btn btn-style1' onclick='window.location.href="../user/index.php"'><strong>Voltar</strong></button>
-            </div> 
-            <div class="botaoAlterar">
-                <button class='btn btn-style1' onclick='window.location.href="alteracao.php"'>Algo errado? Você pode alterar seus dados <strong>aqui!</strong></button>
-            </div>
-        </div>
     </body>
-    <div class="content">
+    <div class='container botoes'>
+        <div class="botaoVoltar">
+            <button class='btn btn-style1' onclick='window.location.href="../user/index.php"'><strong>Voltar</strong></button>
+        </div> 
+        <div class="botaoAlterar">
+            <button class='btn btn-style1' onclick='window.location.href="alteracao.php"'>Algo errado? Você pode alterar seus dados <strong>aqui!</strong></button>
+        </div>
     </div>
 </html>
