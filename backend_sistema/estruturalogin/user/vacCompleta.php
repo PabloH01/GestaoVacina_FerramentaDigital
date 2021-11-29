@@ -78,9 +78,6 @@
             <div class='container not'>
                 <!-- Nav Bar -->
                 <h3><strong>Carteira de completa de Vacinação</strong></h3>
-                <form action='vacsearch.php' method='POST'>
-                <input id='search' name='nome_vacina' type='text' placeholder='Pesquise pelo nome da vacina'><input id='submit' type='submit' value='Search'>
-                </form>
                 <div class=container azul>
                 <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
                 <table class='table'>
