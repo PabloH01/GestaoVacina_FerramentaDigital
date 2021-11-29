@@ -1,9 +1,15 @@
 .azul{
     background-color: var(--colorAzul5_20);
     border: 1px solid var(--cinza_ParaFonte);
-    margin: 5%;
+    padding: 2%;
+    margin-top: 5%;
+    text-align: center;
 }
 
 .h3{
     text-align: center;
+}
+
+.table{
+    background-color: white;
 }
