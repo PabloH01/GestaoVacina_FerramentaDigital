@@ -15,14 +15,12 @@
     <div class="container">
         <div class="info_consulta">
             <h3 class="title"> Exclusão de Vacinas</h3>
-            <form name="nome" action="exclusao.php" method="post" class="form">
-                    <div class="inputs">        
-                        <div>Código da Vacina:</div>
+            <form name="nome" action="exclusao.php" method="post" class="form">     
+                        <div>Informe o código da vacina que deseja excluir:</div>
                         <label class="icon-input cons">
                             <i class="fas fa-file-signature icon-mdy"></i>
-                            <input type="number" name="ID_vacina" placeholder="..."><br><br>
+                            <input type="number" name="ID_vacina" placeholder="Exemplo: 2"><br><br>
                         </label>
-                    </div>
                     <div class="botoes">
                         <button button class="btn btn-style2" type="submit" value="deletar" name="deletar">Deletar</button>
                         <button class="btn btn-style2" type="reset" value="Limpar">Limpar</button>
@@ -35,29 +33,41 @@
             $ID_vacina = $_POST['ID_vacina'];
             $CPF_usuario = $_SESSION["CPF_usuario"];
             if(!empty($ID_vacina)){
-            // criando a linha do  DELETE
-            $sqldelete = "delete from  vacinas where ID_vacina = '$ID_vacina' and CPF_usuario = '$CPF_usuario'";
-    
-            // executando instrução SQL
-            $resultado = @mysqli_query($conexao, $sqldelete);
-            if (!$resultado) {
-                echo '<input type="button" onclick="window.location=' . "'index.php'" . ';" value="Voltar"><br><br>';
-                die('<b>Query Inválida:</b>' . @mysqli_error($conexao));
-            } else { ?>
-                <div class="info_consulta">
-                <h3 class="title">Vacina deletada com sucesso!</h3>
-                    <div class="botoes">
-                        <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
-                    </div>
-                </div>
-            <?php
-            }
-            mysqli_close($conexao);
-            }else { ?>
+                // criando a linha do  DELETE
+                $sqldelete = "delete from  vacinas where ID_vacina = '$ID_vacina' and CPF_usuario = '$CPF_usuario'";
+        
+                // executando instrução SQL
+                $resultado = @mysqli_query($conexao, $sqldelete);
+                if (!$resultado) {
+                    echo '<input type="button" onclick="window.location=' . "'index.php'" . ';" value="Voltar"><br><br>';
+                    die('<b>Query Inválida:</b>' . @mysqli_error($conexao));
+                } else {
+                $num = @mysqli_num_rows($resultado);
+                    if(!empty($num)){ ?>
+                    <div class="info_consulta">
+                        <h3 class="title">Vacina deletada com sucesso!</h3>
+                            <div class="botoes">
+                                <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
+                            </div>
+                        </div>
+                        <?php
+                        exit;		
+                    }else{ ?>
+                        <div class="info_consulta">
+                        <h3 class="title">Código não localizado!</h3>
+                            <div class="botoes">
+                                <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
+                            </div>
+                        </div>
+                    <?php
+                    }
+                    mysqli_close($conexao);
+                }
+            }else{ ?>
                 <div class="info_consulta">
                     <h3 class="title">Preencha o campo!</h3>
                 </div>
-            <?php
+                <?php
             }
         }
         ?>
