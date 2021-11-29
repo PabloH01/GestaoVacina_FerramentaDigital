@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/custom.css">
     <link rel="stylesheet" href="../../../css/css_pages/index.css">
-    <link rel="stylesheet" href="../../../css/css_pages/footer.css">
     <link rel="stylesheet" href="../../../css/css_pages/vacCompleta.css">
     <body>
     <script
@@ -126,18 +125,4 @@
     </body>
     <div class="content">
     </div>
-    <footer id="myFooter">
-        <div class="container">
-            <ul>
-                <div class="linha"></div>
-                <li><a href="#">Informações</a></li>
-                <li><a href="#">Suporte</a></li>
-                <li><a href="#">Redes Sociais</a></li>
-            </ul>
-            <p class="footer-copyright">© 2021 Copyright - Pablo Henrique e Rafaela Petelin</p>
-        </div>
-        <div class="barra">
-            <br><br>
-        </div>
-    </footer>
 </html>
