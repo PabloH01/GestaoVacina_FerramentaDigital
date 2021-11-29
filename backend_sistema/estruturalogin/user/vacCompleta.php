@@ -81,6 +81,7 @@
                 <div class='azul'>
                     <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
                     <h3 class='cinza'>Atualizada em: XX/XX/XXXX - Vencimento: XX/XXXX</h3>
+                    <div class='barra'></div>
                     <table class='table table-bordered'>
                     <thead>
                         <tr>
