@@ -80,16 +80,16 @@
                 <h3><strong>Carteira de completa de Vacinação</strong></h3>
                 <div class=container azul>
                 <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
-                <table class='table'>
+                <table class='table table-bordered'>
                 <thead>
                     <tr>
                     <th scope='col'>Código</th>
-                    <th scope='col'>Nome da Vacina</th>
+                    <th scope='col'>Nome</th>
                     <th scope='col'>Fabricante</th>
                     <th scope='col'>Vacinador</th>
-                    <th scope='col'>Registro profissional do vacinador</th>
-                    <th scope='col'>Quant. Dose</th>
-                    <th scope='col'>Data de aplicação</th>
+                    <th scope='col'>Registro P.</th>
+                    <th scope='col'>Q. Dose</th>
+                    <th scope='col'>Informações</th>
                     </tr>
                 </thead>  
         ";
