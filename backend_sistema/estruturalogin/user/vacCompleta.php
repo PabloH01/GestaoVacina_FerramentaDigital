@@ -80,7 +80,7 @@
                 <h3><strong>Carteira de completa de Vacinação</strong></h3>
                 <div class='container azul'>
                 <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
-                <table class='table table-bordered'>
+                <table class='table-responsive table-bordered'>
                 <thead>
                     <tr>
                     <th scope='col'>Código</th>
