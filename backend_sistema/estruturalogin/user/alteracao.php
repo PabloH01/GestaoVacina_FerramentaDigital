@@ -15,11 +15,11 @@
         }
     ?>
         <div class="container">
-            <div class="info">
+            <div class="info_consulta">
                 <h3 class="title">Alterar Dados de Vacina</h3>
                 <form name="nome" action="veralteracao.php" method="post" class="form">
                     Insira o código da vacina que você deseja alterar:
-                    <label class="icon-input">
+                    <label class="icon-input cons">
                             <i class="fas fa-address-book icon-mdy"></i>
                             <input type="number" name="ID_vacina" placeholder="Exemplo: 2">
                     </label>   
