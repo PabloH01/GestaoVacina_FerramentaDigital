@@ -123,7 +123,14 @@
         mysqli_close($conexao);
         ?>
         <br>
-        <input type='button' onclick="window.location='index.php';" value="Voltar">
+        <div class='container botoes'>
+            <div class="botaoVoltar">
+                <button class='btn btn-style1' onclick='window.location.href="../user/index.php"'><strong>Voltar</strong></button>
+            </div> 
+            <div class="botaoAlterar">
+                <button class='btn btn-style1' onclick='window.location.href="alteracao.php"'>Algo errado? Você pode alterar seus dados <strong>aqui!</strong></button>
+            </div>
+        </div>
     </body>
     <div class="content">
     </div>
