@@ -108,6 +108,7 @@
                 echo "</tr>";
                 echo "</tbody>";
                 echo "</div>";
+                echo "</div>";
             echo "</div>";
         echo "</div>";
         //  // buscando a na pasta imagem
@@ -123,15 +124,13 @@
         mysqli_close($conexao);
         ?>
         <br>
-    </body>
-</html>
-<html>
-    <div class='container botoes'>
-        <div class="botaoVoltar">
-            <button class='btn btn-style1' onclick='window.location.href="../user/index.php"'><strong>Voltar</strong></button>
-        </div> 
-        <div class="botaoAlterar">
-            <button class='btn btn-style1' onclick='window.location.href="alteracao.php"'>Algo errado? Você pode alterar seus dados <strong>aqui!</strong></button>
+        <div class='container botoes'>
+            <div class="botaoVoltar">
+                <button class='btn btn-style1' onclick='window.location.href="../user/index.php"'><strong>Voltar</strong></button>
+            </div> 
+            <div class="botaoAlterar">
+                <button class='btn btn-style1' onclick='window.location.href="alteracao.php"'>Algo errado? Você pode alterar seus dados <strong>aqui!</strong></button>
+            </div>
         </div>
-    </div>
+    </body>
 </html>
