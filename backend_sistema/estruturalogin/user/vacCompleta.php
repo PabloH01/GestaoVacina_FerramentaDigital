@@ -4,8 +4,15 @@
     <title> Carteira de Vacinação </title>
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/css_pages/index.css">
+    <link rel="stylesheet" href="../../../css/css_pages/footer.css">
     <link rel="stylesheet" href="../../../css/css_pages/vacCompleta.css">
     <body>
+    <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous">
+    </script>
+    <script src="../../../js/bootstrap.min.js"></script>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
             <a class="navbar-brand" href="#">
@@ -117,4 +124,20 @@
         <br>
         <input type='button' onclick="window.location='index.php';" value="Voltar">
     </body>
+    <div class="content">
+    </div>
+    <footer id="myFooter">
+        <div class="container">
+            <ul>
+                <div class="linha"></div>
+                <li><a href="#">Informações</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Redes Sociais</a></li>
+            </ul>
+            <p class="footer-copyright">© 2021 Copyright - Pablo Henrique e Rafaela Petelin</p>
+        </div>
+        <div class="barra">
+            <br><br>
+        </div>
+    </footer>
 </html>
