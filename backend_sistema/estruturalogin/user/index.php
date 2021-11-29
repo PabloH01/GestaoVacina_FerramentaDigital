@@ -179,7 +179,7 @@
                                 <li><a href="#">Suporte</a></li>
                                 <li><a href="#">Redes Sociais</a></li>
                             </ul>
-                            <p class="footer-copyright">© 2021 Copyright - Pablo Henrique, Rafaela Petelin e Thaissa Ferrari</p>
+                            <p class="footer-copyright">© 2021 Copyright - Pablo Henrique e Rafaela Petelin</p>
                         </div>
                         <div class="barra">
                             <br><br>
