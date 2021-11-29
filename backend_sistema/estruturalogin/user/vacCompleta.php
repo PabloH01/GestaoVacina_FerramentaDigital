@@ -77,7 +77,7 @@
         <div id='tabelaVacinas'>
             <div class='container not'>
                 <!-- Nav Bar -->
-                <h3><strong>Carteira de completa de Vacinação</strong></h3>
+                <h3>Carteira de completa de Vacinação</h3>
                 <div class='azul'>
                     <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
                     <h3 class='cinza'>Atualizada em: XX/XX/XXXX - Vencimento: XX/XXXX</h3>
