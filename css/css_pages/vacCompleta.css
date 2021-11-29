@@ -26,3 +26,7 @@
 .table{
     background-color: white;
 }
+
+.botoes{
+    background-color: var(--colorAzul5_20);
+}
