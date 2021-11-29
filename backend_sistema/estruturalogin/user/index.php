@@ -104,7 +104,7 @@
                                     </a>
                                 </div>
                                 <div class="col">
-                                    <a href='geral.php' class="link-edit">
+                                    <a href='vacCompleta.php' class="link-edit">
                                         <label class="icon-input">
                                             <i class="fas fa-envelope-open-text icon-mdy"></i>
                                             Carteira de vacinação<br> completa.
