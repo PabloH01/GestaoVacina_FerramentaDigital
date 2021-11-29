@@ -106,6 +106,7 @@
                 echo "<td align = 'center'>". $dados['regProfVacinador'] . "</td>";
                 echo "<td align = 'center'>". $dados['dose'] . "</td>";
                 echo "<td align = 'center'>". $dados['data_vac'] . "</td>";
+                echo "<td align = 'center'>Lote.<br>Venc.<br>Ass.</td>";
                 echo "</tr>";
                 echo "</tbody>";
                 echo "</div>";
