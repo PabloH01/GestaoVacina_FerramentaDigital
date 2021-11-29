@@ -75,9 +75,9 @@
         echo "
         <body>
         <div id='tabelaVacinas'>
-            <div class='container all'>
+            <div class='container not'>
                 <!-- Nav Bar -->
-                <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
+                <h3>Carteira de Vacinação Completa</h3><br>
                 <div class='azul'>
                     <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
                     <h3 class='cinza'>Atualizada em: XX/XX/XXXX - Vencimento: XX/XXXX</h3>
