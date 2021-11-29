@@ -24,13 +24,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Sobre</a>
                 </li>
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Serviços
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -75,7 +75,7 @@
         echo "
         <body>
         <div id='tabelaVacinas'>
-            <div class='container not'>
+            <div class='container all'>
                 <!-- Nav Bar -->
                 <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
                 <div class='azul'>
