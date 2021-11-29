@@ -79,35 +79,37 @@
             <div class='container not'>
                 <!-- Nav Bar -->
                 <h3><strong>Carteira de completa de Vacinação</strong></h3>
-                <div class='container container-azul'>
-                <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
-                <table class='table table-bordered'>
-                <thead>
-                    <tr>
-                    <th scope='col'>Código</th>
-                    <th scope='col'>Nome</th>
-                    <th scope='col'>Fabricante</th>
-                    <th scope='col'>Vacinador</th>
-                    <th scope='col'>Registro P.</th>
-                    <th scope='col'>Q. Dose</th>
-                    <th scope='col'>Informações</th>
-                    </tr>
-                </thead>  
+                <div class='container'>
+                <body class='azul'>
+                    <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
+                    <table class='table table-bordered'>
+                    <thead>
+                        <tr>
+                        <th scope='col'>Código</th>
+                        <th scope='col'>Nome</th>
+                        <th scope='col'>Fabricante</th>
+                        <th scope='col'>Vacinador</th>
+                        <th scope='col'>Registro P.</th>
+                        <th scope='col'>Q. Dose</th>
+                        <th scope='col'>Informações</th>
+                        </tr>
+                    </thead>  
         ";
         
         while($dados = mysqli_fetch_array($query)){      
-        echo "</tr>";
-        echo "<td align = 'center'>" . $dados['ID_vacina'] . "</td>";
-        echo "<td align = 'center'>". $dados['nome_vacina'] . "</td>";
-        echo "<td align = 'center'>". $dados['fabricante'] . "</td>";
-        echo "<td align = 'center'>" . $dados['vacinador'] . "</td>";
-        echo "<td align = 'center'>". $dados['regProfVacinador'] . "</td>";
-        echo "<td align = 'center'>". $dados['dose'] . "</td>";
-        echo "<td align = 'center'>". $dados['data_vac'] . "</td>";
-        echo "</tr>";
-        echo "</tbody>";
-        echo "</div>";
-        echo "</div>";
+                echo "</tr>";
+                echo "<td align = 'center'>" . $dados['ID_vacina'] . "</td>";
+                echo "<td align = 'center'>". $dados['nome_vacina'] . "</td>";
+                echo "<td align = 'center'>". $dados['fabricante'] . "</td>";
+                echo "<td align = 'center'>" . $dados['vacinador'] . "</td>";
+                echo "<td align = 'center'>". $dados['regProfVacinador'] . "</td>";
+                echo "<td align = 'center'>". $dados['dose'] . "</td>";
+                echo "<td align = 'center'>". $dados['data_vac'] . "</td>";
+                echo "</tr>";
+                echo "</tbody>";
+                echo "</body>";
+                echo "</div>";
+            echo "</div>";
         echo "</div>";
         //  // buscando a na pasta imagem
         //  if (empty($dados['imagem'])) {
