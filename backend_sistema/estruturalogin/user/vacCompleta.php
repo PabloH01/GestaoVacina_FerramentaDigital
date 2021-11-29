@@ -79,8 +79,7 @@
             <div class='container not'>
                 <!-- Nav Bar -->
                 <h3><strong>Carteira de completa de Vacinação</strong></h3>
-                <div class='container'>
-                <body class='azul'>
+                <div class='azul'>
                     <h3 class='cinza'>Gestão de Vacinação Digital:</h3><br>
                     <table class='table table-bordered'>
                     <thead>
@@ -107,7 +106,6 @@
                 echo "<td align = 'center'>". $dados['data_vac'] . "</td>";
                 echo "</tr>";
                 echo "</tbody>";
-                echo "</body>";
                 echo "</div>";
             echo "</div>";
         echo "</div>";
