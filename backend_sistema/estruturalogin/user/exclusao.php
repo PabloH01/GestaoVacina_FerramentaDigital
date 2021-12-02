@@ -32,42 +32,30 @@
         if(isset($_POST["deletar"])){
             $ID_vacina = $_POST['ID_vacina'];
             $CPF_usuario = $_SESSION["CPF_usuario"];
-            if(!empty($ID_vacina)){
-                // criando a linha do  DELETE
-                $sqldelete = "delete from  vacinas where ID_vacina = '$ID_vacina' and CPF_usuario = '$CPF_usuario'";
-        
-                // executando instrução SQL
-                $resultado = @mysqli_query($conexao, $sqldelete);
-                if (!$resultado) {
-                    echo '<input type="button" onclick="window.location=' . "'index.php'" . ';" value="Voltar"><br><br>';
-                    die('<b>Query Inválida:</b>' . @mysqli_error($conexao));
-                } else {
-                $num = @mysqli_num_rows($resultado);
-                    if(!empty($num)){ ?>
-                    <div class="info_consulta">
-                        <h3 class="title">Vacina deletada com sucesso!</h3>
-                            <div class="botoes">
-                                <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
-                            </div>
-                        </div>
-                        <?php
-                        exit;		
+                if(!empty($ID_vacina)){
+                    // criando a linha do  DELETE
+                    $sqldelete = "delete from  vacinas where ID_vacina = '$ID_vacina' and CPF_usuario = '$CPF_usuario'";
+
+                    // executando instrução SQL
+                    $resultado = @mysqli_query($conexao, $sqldelete);
+                    if (!$resultado) {
+                        echo '<input type="button" onclick="window.location=' . "'index.php'" . ';" value="Voltar"><br><br>';
+                        die('<b>Query Inválida:</b>' . @mysqli_error($conexao));
                     }else{ ?>
                         <div class="info_consulta">
-                        <h3 class="title">Código não localizado!</h3>
-                            <div class="botoes">
-                                <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
+                            <h3 class="title">Vacina deletada com sucesso!</h3>
+                                <div class="botoes">
+                                    <button class="btn btn-style2" type='button' onclick="window.location = 'index.php';" value="Voltar">Voltar</button>
+                                </div>
                             </div>
-                        </div>
-                    <?php
+                            <?php
                     }
                     mysqli_close($conexao);
-                }
             }else{ ?>
                 <div class="info_consulta">
                     <h3 class="title">Preencha o campo!</h3>
                 </div>
-                <?php
+            <?php
             }
         }
         ?>
