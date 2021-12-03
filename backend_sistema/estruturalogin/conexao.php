@@ -1,16 +1,16 @@
 <?php
 
-
+/*
 $host = "localhost";
 $user = "root";
 $pass = "";
 $banco = "carteiravac";
+*/
 
-
-/* $host = "201.62.65.6";
+$host = "201.62.65.6";
 $user = "pablo";
 $pass = "pablo19116";
-$banco = "etim_19116"; */
+$banco = "etim_19116";
 
 // git checkout -b galiehbtqe
 // git checkout develop
